@@ -7,3 +7,9 @@ Thumbs.db
 # Original CVs: contain phone numbers and referee contact details
 Academic_CV.pdf
 Professinal_CV.pdf
+
+# Loose files dropped in the project root (originals, scans). Site files live in assets/.
+/*.pdf
+/*.jpg
+/*.jpeg
+/*.png

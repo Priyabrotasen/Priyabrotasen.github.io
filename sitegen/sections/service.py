@@ -1,14 +1,17 @@
-"""Service: reviewing and volunteering. Add a group by appending to GROUPS."""
+"""Service: reviewing and volunteering. Add a group by appending to `groups`.
+
+A reviewing item with a `certificate` path gets a Certificate button.
+"""
 from ..content import PROFILE
-from ..html import bullets, e
+from ..html import bullets, certificate_button, e
 
 
 def render(root):
-    groups = [
-        ("Reviewing", ["%s. %s" % (s["title"], s["detail"]) for s in PROFILE.get("service") or []]),
-        ("Volunteering", PROFILE.get("volunteering") or []),
-    ]
-    return "".join(
-        '<div class="service-group"><h3>%s</h3>%s</div>' % (e(title), bullets(items, root=root))
-        for title, items in groups if items
+    reviewing = "".join(
+        "<li>%s. %s%s</li>" % (e(s["title"]), e(s["detail"]), certificate_button(s, root)) for s in PROFILE.get("service") or []
     )
+    groups = [
+        ("Reviewing", '<ul class="simple-list">%s</ul>' % reviewing if reviewing else ""),
+        ("Volunteering", bullets(PROFILE.get("volunteering") or [], root=root)),
+    ]
+    return "".join('<div class="service-group"><h3>%s</h3>%s</div>' % (e(title), body) for title, body in groups if body)

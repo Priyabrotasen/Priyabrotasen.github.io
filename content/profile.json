@@ -260,13 +260,15 @@
     {
       "title": "Best Senior Engineer of the Year",
       "org": "BJIT Ltd.",
-      "year": "2022"
+      "year": "2022",
+      "certificate": "assets/certificates/best-senior-engineer-2022.jpg"
     }
   ],
   "service": [
     {
       "title": "Reviewer, IEEE ICASSP 2027",
-      "detail": "Toronto, Canada. Reviewed 4 submissions."
+      "detail": "Toronto, Canada. Reviewed 4 submissions.",
+      "certificate": "assets/certificates/icassp-2027-reviewer.jpg"
     }
   ],
   "volunteering": [
@@ -274,5 +276,6 @@
     "Member, SGIPC (KUET programming club)",
     "Member, TRY (KUET social service club)"
   ],
-  "_text_note": "Bio paragraphs, news and the callout support [links](https://example.com), **bold** and *italic*."
+  "_text_note": "Bio paragraphs, news and the callout support [links](https://example.com), **bold** and *italic*.",
+  "_certificate_note": "Awards and service items take an optional `certificate`: a path under assets/ to an image or PDF. A 'Certificate' button appears when it is set."
 }

@@ -52,6 +52,13 @@ def button(label, href, external=True, icon=None, cls="button"):
     return '<a class="%s" href="%s"%s>%s%s</a>' % (cls, e(href), attrs, icon or "", e(label))
 
 
+
+def certificate_button(item, root=""):
+    """A small 'Certificate' button for an item that has a `certificate` path, else ""."""
+    if not item.get("certificate"):
+        return ""
+    return ' <a class="button button-ghost button-inline" href="%s%s" target="_blank" rel="noopener">Certificate</a>' % (root, e(item["certificate"]))
+
 # --------------------------------------------------------------------------
 # Icons: inline SVG, decorative. Add a new one by adding a path here.
 # --------------------------------------------------------------------------
