@@ -20,7 +20,17 @@
         "Fine-tuned YOLOv11s at 640×640 and deployed it with per-camera regions of interest and SORT tracking on live 1080p streams.",
         "Ran four independent end-to-end validation tests and a stage-wise error analysis that separates perception, routing, and manipulation failures."
       ],
-      "methods": ["Python", "YOLOv11s", "SORT tracking", "Roboflow", "Multi-camera live inference", "Unity 3D", "C#", "3D Gaussian Splatting", "Six-axis robot arm"],
+      "methods": [
+        "Python",
+        "YOLOv11s",
+        "SORT tracking",
+        "Roboflow",
+        "Multi-camera live inference",
+        "Unity 3D",
+        "C#",
+        "3D Gaussian Splatting",
+        "Six-axis robot arm"
+      ],
       "results": [
         "99.76% mAP@50, 100% precision, and 99.6% recall on held-out test images; 85.35% mAP@50:95 and a 99.8% F1-score on the test set.",
         "212 ms mean perception latency across four live cameras; 95% of 519 object observations reached the digital twin in under 300 ms.",
@@ -30,7 +40,11 @@
         "Routing messages averaged 2.74 ms round trip with 100% acknowledgment over 2,561 exchanges."
       ],
       "image": null,
-      "links": { "paper": null, "code": null, "demo": null },
+      "links": {
+        "paper": null,
+        "code": null,
+        "demo": "https://www.youtube.com/watch?v=D6dnBsgv1sg&t=2s"
+      },
       "publication": "closed-loop-digital-twin"
     },
     {
@@ -52,7 +66,14 @@
         "Ran the controlled comparison against a tuned sliding-window estimator and analysed where each approach fails.",
         "Built a hybrid monitor that keeps the learned model's gains on short bursts."
       ],
-      "methods": ["PyTorch", "Video transformers", "Benchmark construction", "Tuned statistical baselines", "Held-out calibration split", "Simulation-to-hardware transfer"],
+      "methods": [
+        "PyTorch",
+        "Video transformers",
+        "Benchmark construction",
+        "Tuned statistical baselines",
+        "Held-out calibration split",
+        "Simulation-to-hardware transfer"
+      ],
       "results": [
         "The model recovered 72–80% of the achievable decoding gain on short bursts, against 44–67% for a tuned sliding-window estimator.",
         "It transferred to a larger code without retraining.",
@@ -60,7 +81,11 @@
         "With no retraining, the simulation-trained monitor flagged a documented event in a 500,000-shot hardware recording in its first block, alarming on 0.03% of other blocks."
       ],
       "image": null,
-      "links": { "paper": null, "code": null, "demo": null },
+      "links": {
+        "paper": null,
+        "code": null,
+        "demo": null
+      },
       "publication": "syndrome-videos"
     },
     {
@@ -80,14 +105,26 @@
         "Evaluated long-horizon rollouts on CLEVRER and Push-T against the C-JEPA baseline.",
         "Ran the downstream counterfactual question-answering check and the ablation on chunked selection."
       ],
-      "methods": ["PyTorch", "JEPA", "Object-centric (slot) representations", "Hard-example sampling", "CLEVRER", "Push-T", "Ablation studies"],
+      "methods": [
+        "PyTorch",
+        "JEPA",
+        "Object-centric (slot) representations",
+        "Hard-example sampling",
+        "CLEVRER",
+        "Push-T",
+        "Ablation studies"
+      ],
       "results": [
         "Cut 32-step rollout RMSE by 33–48% on CLEVRER and 35–37% on Push-T against the C-JEPA baseline.",
         "Raised counterfactual question-answering accuracy from 49.7% to 61.0% with one masked object.",
         "An ablation confirmed that chunked selection helps at two or more masks."
       ],
       "image": null,
-      "links": { "paper": null, "code": null, "demo": null },
+      "links": {
+        "paper": null,
+        "code": null,
+        "demo": null
+      },
       "publication": "dor-jepa"
     },
     {
@@ -106,14 +143,23 @@
       "contribution": [
         "Proposed the enhanced Decimal Matrix Code and carried out the simulations comparing it with existing error-correcting codes."
       ],
-      "methods": ["Error-correcting codes", "Decimal Matrix Code (DMC)", "Soft-error tolerance", "Simulation"],
+      "methods": [
+        "Error-correcting codes",
+        "Decimal Matrix Code (DMC)",
+        "Soft-error tolerance",
+        "Simulation"
+      ],
       "results": [
         "Better error detection and correction with lower overhead than existing error-correcting codes.",
         "Superior performance in simulation, particularly with more than three erroneous bits.",
         "Fewer redundant bits than standard DMC."
       ],
       "image": null,
-      "links": { "paper": "https://doi.org/10.1109/ICECIT54077.2021.9641342", "code": null, "demo": null },
+      "links": {
+        "paper": "https://doi.org/10.1109/ICECIT54077.2021.9641342",
+        "code": null,
+        "demo": null
+      },
       "publication": "error-correcting-coding"
     },
     {
@@ -133,12 +179,24 @@
         "Built the document-processing and RAG pipeline in Python with PyMuPDF and GPT-4o.",
         "Research and development, coding, document parsing, and testing."
       ],
-      "methods": ["Python", "GPT-4o", "PyMuPDF", "Retrieval-augmented generation", "bitsandbytes", "Google Colab", "NLP"],
+      "methods": [
+        "Python",
+        "GPT-4o",
+        "PyMuPDF",
+        "Retrieval-augmented generation",
+        "bitsandbytes",
+        "Google Colab",
+        "NLP"
+      ],
       "results": [
         "Enabled engineers to query specialised technical knowledge directly from enterprise PDF documentation."
       ],
       "image": null,
-      "links": { "paper": null, "code": null, "demo": null },
+      "links": {
+        "paper": null,
+        "code": null,
+        "demo": null
+      },
       "publication": null
     },
     {
@@ -159,10 +217,30 @@
         "Secured it with OAuth2/JWT authentication and HashiCorp Vault secrets management.",
         "Set up deployment and operational monitoring with Grafana and Prometheus."
       ],
-      "methods": ["Java", "Spring Boot", "Spring Security", "OAuth2 with JWT", "Maven", "Swagger / OpenAPI", "REST API", "HashiCorp Vault", "Grafana", "Prometheus", "Loki", "Promtail", "PromQL", "JUnit", "SLF4J"],
+      "methods": [
+        "Java",
+        "Spring Boot",
+        "Spring Security",
+        "OAuth2 with JWT",
+        "Maven",
+        "Swagger / OpenAPI",
+        "REST API",
+        "HashiCorp Vault",
+        "Grafana",
+        "Prometheus",
+        "Loki",
+        "Promtail",
+        "PromQL",
+        "JUnit",
+        "SLF4J"
+      ],
       "results": [],
       "image": null,
-      "links": { "paper": null, "code": null, "demo": null },
+      "links": {
+        "paper": null,
+        "code": null,
+        "demo": null
+      },
       "publication": null
     },
     {
@@ -183,10 +261,29 @@
         "Carried out data exchange and migration between PLM/PDM systems.",
         "Implemented PLM methodologies in the client environment, and handled deployment, maintenance, testing, and support."
       ],
-      "methods": ["Java", "J2EE", "Spring", "Spring Boot", "Ajax", "XML", "JavaScript", "Apache HAProxy", "ENOVIA", "SQL Server", "RabbitMQ", "RequireJS", "jQuery", "REST services"],
+      "methods": [
+        "Java",
+        "J2EE",
+        "Spring",
+        "Spring Boot",
+        "Ajax",
+        "XML",
+        "JavaScript",
+        "Apache HAProxy",
+        "ENOVIA",
+        "SQL Server",
+        "RabbitMQ",
+        "RequireJS",
+        "jQuery",
+        "REST services"
+      ],
       "results": [],
       "image": null,
-      "links": { "paper": null, "code": null, "demo": null },
+      "links": {
+        "paper": null,
+        "code": null,
+        "demo": null
+      },
       "publication": null
     },
     {
@@ -205,10 +302,23 @@
         "Modernised web-based workflows with TVC-framework frontend enhancements.",
         "Deployment, maintenance, testing, and support."
       ],
-      "methods": ["Java", "J2EE", "Spring", "Spring Boot", "Ajax", "XML", "JavaScript", "TVC framework"],
+      "methods": [
+        "Java",
+        "J2EE",
+        "Spring",
+        "Spring Boot",
+        "Ajax",
+        "XML",
+        "JavaScript",
+        "TVC framework"
+      ],
       "results": [],
       "image": null,
-      "links": { "paper": null, "code": null, "demo": null },
+      "links": {
+        "paper": null,
+        "code": null,
+        "demo": null
+      },
       "publication": null
     }
   ]
