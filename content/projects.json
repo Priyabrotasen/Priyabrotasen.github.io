@@ -45,7 +45,29 @@
         "code": null,
         "demo": "https://www.youtube.com/watch?v=D6dnBsgv1sg&t=2s"
       },
-      "publication": null
+      "publication": null,
+      "gallery": {
+        "title": "Lab demonstrations",
+        "caption": "Demonstrating the production-line testbed and its digital twin to groups visiting the lab.",
+        "images": [
+          {
+            "src": "assets/projects/digital-twin/lab-demo-1.jpg",
+            "alt": "Priyabrota Sen pointing to the camera setup while a group of visiting students looks on"
+          },
+          {
+            "src": "assets/projects/digital-twin/lab-demo-2.jpg",
+            "alt": "Priyabrota Sen showing the digital twin on a monitor beside the conveyor to visiting students"
+          },
+          {
+            "src": "assets/projects/digital-twin/lab-demo-3.jpg",
+            "alt": "Priyabrota Sen explaining the conveyor, cameras and robot arm to a group of visitors"
+          },
+          {
+            "src": "assets/projects/digital-twin/lab-demo-4.jpg",
+            "alt": "Visitors watching the conveyor and camera testbed during a demonstration"
+          }
+        ]
+      }
     },
     {
       "slug": "syndrome-videos",
@@ -321,5 +343,6 @@
       },
       "publication": null
     }
-  ]
+  ],
+  "_gallery_note": "Optional per project: \"gallery\": {\"title\": ..., \"caption\": ..., \"images\": [{\"src\": \"assets/...\", \"alt\": \"...\"}]}. Shown on the project's detail page."
 }

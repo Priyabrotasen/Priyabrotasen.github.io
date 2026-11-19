@@ -122,6 +122,20 @@ def project_card(p, root="", show_result=True):
          tags(p.get("methods", [])[:6]), venue, "".join(links))
 
 
+def gallery(spec, root=""):
+    """Photo grid for a {"title", "caption", "images": [{"src", "alt"}]} spec. Each photo opens full size."""
+    if not spec or not spec.get("images"):
+        return ""
+    figures = "".join(
+        '<a href="%s%s" target="_blank" rel="noopener"><img src="%s%s" alt="%s" loading="lazy"></a>'
+        % (root, e(i["src"]), root, e(i["src"]), e(i.get("alt", "")))
+        for i in spec["images"]
+    )
+    caption = "<figcaption>%s</figcaption>" % e(spec["caption"]) if spec.get("caption") else ""
+    return '<h3>%s</h3><figure class="gallery"><div class="gallery-grid">%s</div>%s</figure>' % (
+        e(spec.get("title", "Gallery")), figures, caption)
+
+
 # --------------------------------------------------------------------------
 # Timeline (education, experience)
 # --------------------------------------------------------------------------

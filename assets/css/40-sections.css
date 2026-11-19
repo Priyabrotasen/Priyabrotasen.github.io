@@ -50,3 +50,12 @@
 .facts dt { font-size: 0.72rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--faint); }
 .facts dd { font-size: 0.88rem; }
 .project-figure { margin-top: 20px; border-radius: var(--radius); border: 1px solid var(--border); }
+
+/* ---- Photo gallery (project pages) ---- */
+.gallery { margin: 4px 0 8px; }
+.gallery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+.gallery-grid a { display: block; border-radius: var(--radius); overflow: hidden; background: var(--card); }
+.gallery-grid img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; transition: transform .25s ease; }
+.gallery-grid a:hover img { transform: scale(1.03); }
+.gallery figcaption { margin-top: 10px; font-size: 0.84rem; color: var(--faint); }
+@media (max-width: 520px) { .gallery-grid { grid-template-columns: 1fr; } }

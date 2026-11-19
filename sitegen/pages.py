@@ -5,7 +5,7 @@ returns layout.page(...) and register it in all_pages().
 """
 import json
 
-from .components import CATEGORY_LABELS, project_card, publication_card, venue_line
+from .components import CATEGORY_LABELS, gallery, project_card, publication_card, venue_line
 from .content import PROFILE, PROJECTS, PUB_BY_ID
 from .html import ICONS, bullets, button, e, paras, tags
 from .layout import page
@@ -59,6 +59,7 @@ def project(p, nav):
   <dl class="facts">%(facts)s</dl>
   %(image)s
   <h3>Overview</h3>%(description)s
+  %(gallery)s
   <h3>My contribution</h3>%(contribution)s
   %(results)s
   <h3>Methods and technologies</h3>%(methods)s
@@ -68,7 +69,7 @@ def project(p, nav):
         "back": back, "icon": ICONS["back"], "area": e(p["area"]), "title": e(p["title"]), "summary": e(p["summary"]),
         "links": '<div class="button-row">%s</div>' % links if links else "",
         "facts": "".join("<div><dt>%s</dt><dd>%s</dd></div>" % (e(k), e(v)) for k, v in facts),
-        "image": image, "description": paras(p["description"], root), "contribution": bullets(p["contribution"]),
+        "image": image, "gallery": gallery(p.get("gallery"), root), "description": paras(p["description"], root), "contribution": bullets(p["contribution"]),
         "results": results, "methods": tags(p["methods"]), "related": related, "more": more,
     }
     return page("projects/%s.html" % p["slug"], p["title"], p["summary"], content, nav)
