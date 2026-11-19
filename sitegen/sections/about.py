@@ -1,4 +1,8 @@
-"""About: optional callout, positioning line, biography, interests, headline numbers."""
+"""About: optional callout and a short biography.
+
+The positioning line, interest tags and headline numbers are optional extras,
+switched on with the `about` flags in content/profile.json.
+"""
 from ..content import CVS, PROFILE
 from ..html import ICONS, button, e, paras, rich, tags
 
@@ -7,15 +11,16 @@ def render(root):
     parts = []
     if PROFILE.get("callout"):
         parts.append('<div class="callout">%s<p>%s</p></div>' % (ICONS["info"], rich(PROFILE["callout"], root)))
-    if PROFILE.get("positioning"):
+    show = PROFILE.get("about") or {}
+    if show.get("show_positioning") and PROFILE.get("positioning"):
         parts.append('<p class="lead">%s</p>' % rich(PROFILE["positioning"], root))
     parts.append(paras(PROFILE["bio_long"], root))
 
-    if PROFILE.get("interests"):
+    if show.get("show_interests") and PROFILE.get("interests"):
         parts.append('<h3 class="minor-heading">Research interests</h3>')
         parts.append(tags([i["title"] for i in PROFILE["interests"]], "tags tags-lg"))
 
-    if PROFILE.get("metrics"):
+    if show.get("show_metrics") and PROFILE.get("metrics"):
         cells = "".join(
             '<div class="metric"><dt>%s</dt><dd class="metric-value">%s</dd><dd class="metric-detail">%s</dd></div>'
             % (e(m["label"]), e(m["value"]), e(m["detail"]))

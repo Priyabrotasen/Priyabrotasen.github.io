@@ -1,7 +1,6 @@
 {
   "_readme": "Edit this file to change site-wide details. A value of null means the item is hidden on the site. Entries listed in `todo` are things only you can supply.",
   "todo": [
-    "photo: currently a dummy image - replace assets/portrait-placeholder.svg with a real portrait (e.g. assets/portrait.jpg) and update \"photo\"",
     "links.orcid: no ORCID appears in either CV",
     "bio_short / bio_long: drafted from the two CVs - review the wording, especially the statements about motivation",
     "cv: links are hidden. Add cleaned CV PDFs and set cv.academic.source / cv.professional.source"
@@ -16,7 +15,7 @@
     "location": "Georgia, USA"
   },
   "email": "psen3@students.kennesaw.edu",
-  "photo": "assets/portrait-placeholder.svg",
+  "photo": "assets/portrait.jpg",
   "site_url": "https://priyabrotasen.github.io",
   "links": {
     "scholar": "https://scholar.google.com/citations?user=TzkaZ6cAAAAJ&hl=en",
@@ -42,12 +41,16 @@
   "callout": null,
   "intro": "I am a Ph.D. student in Computer Science at Kennesaw State University, working in the Sustainable Smart Systems Lab (S³ Lab) with my advisor, Bobin Deng. Before the Ph.D. I spent eight years at BJIT Ltd., moving from Software Engineer to Principal Software Engineer, building secure microservices, retrieval-augmented knowledge tools, and enterprise PLM integrations.",
   "bio_short": "Priyabrota Sen is a doctoral researcher in Computer Science at Kennesaw State University, working on computer vision, video world models, and the evaluation of learned systems under real operating conditions. Current work spans a vision-driven digital twin for robotic production lines, a benchmark for learned noise adaptation in quantum error-correction streams, and difficulty-ranked masking for video world models. Before starting the Ph.D. in 2025, Sen spent eight years at BJIT Ltd., rising from Software Engineer to Principal Software Engineer and delivering secure Java/Spring Boot services, retrieval-augmented knowledge tools, and Dassault Systèmes ENOVIA PLM/PDM integrations.",
+  "_about_note": "The About section shows `bio_long` (keep it to a few short paragraphs). Set a flag below to true to also show the positioning line, the research-interest tags, or the headline numbers.",
+  "about": {
+    "show_positioning": false,
+    "show_interests": false,
+    "show_metrics": false
+  },
   "bio_long": [
-    "I am a doctoral researcher in Computer Science at Kennesaw State University, in the Sustainable Smart Systems Lab (S³ Lab) advised by Bobin Deng, where I work on computer vision and machine learning for systems that operate in the physical world. My current research follows three threads: a closed-loop digital twin in which a fine-tuned detector and multi-camera tracking drive a six-axis robot arm on a production-line testbed; video world models that decide what to mask during training by ranking objects by how hard they are to predict; and a large benchmark that treats quantum error-correction measurements as sparse binary video.",
-    "A common concern runs through all three: careful evaluation. I build datasets and benchmarks with held-out and calibration splits, compare models against tuned statistical baselines over multiple seeds, test differences for significance, and report where a learned method loses as well as where it wins. Several collaborations extend this to conformal prediction and calibrated decision-making in medical and surgical video.",
-    "I came to research after eight years in industry. At BJIT Ltd. in Bangladesh I was promoted twice, from Software Engineer to Senior and then Principal Software Engineer, and was named Best Senior Engineer of the Year in 2022. I built Java/Spring Boot microservices secured with OAuth2/JWT and HashiCorp Vault, a retrieval-augmented generation tool over enterprise PDF documentation, and integrations and data migrations for Dassault Systèmes ENOVIA / 3DEXPERIENCE PLM and PDM platforms.",
-    "That background shapes how I work now. I care about whether a model still performs after it is deployed, which is why my research reports latency on live camera streams, end-to-end task success on real hardware, and stage-by-stage error analysis alongside benchmark accuracy.",
-    "I hold a B.Sc. in Computer Science and Engineering from Khulna University of Engineering & Technology (KUET), where my thesis on error-correcting codes for memory reliability led to an IEEE conference paper."
+    "I am a Ph.D. student in Computer Science at [Kennesaw State University](https://www.kennesaw.edu/), advised by Bobin Deng in the Sustainable Smart Systems Lab (S³ Lab). My research is in computer vision and machine learning for systems that act in the physical world: vision-driven digital twins for robotic production lines, video world models, and the benchmarks and calibration needed to trust them.",
+    "Before the Ph.D. I spent eight years at BJIT Ltd., rising from Software Engineer to Principal Software Engineer, where I built secure Java/Spring Boot microservices, a retrieval-augmented knowledge tool, and Dassault Systèmes ENOVIA PLM integrations.",
+    "I received my B.Sc. in Computer Science and Engineering from [Khulna University of Engineering & Technology](https://www.kuet.ac.bd/) (KUET), where I worked with Prof. Muhammad Sheikh Sadi on error-correcting codes for memory reliability."
   ],
   "trajectory": [
     {
