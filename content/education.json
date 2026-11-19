@@ -1,5 +1,7 @@
 {
-  "_readme": "Newest first. null fields are hidden.",
+  "_readme": "Newest first. null fields are hidden. Coursework and online courses are kept here but only shown when their show_ flag is true.",
+  "show_coursework": false,
+  "show_online_courses": false,
   "degrees": [
     {
       "degree": "Ph.D. in Computer Science",

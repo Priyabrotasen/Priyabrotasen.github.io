@@ -1,4 +1,4 @@
-"""Education: degrees on a timeline, then coursework and online courses."""
+"""Education: degrees on a timeline. Coursework and online courses are optional (flags in education.json)."""
 from ..components import timeline, timeline_item
 from ..content import EDUCATION, PROJECT_BY_SLUG
 from ..html import bullets, e, tags
@@ -28,11 +28,11 @@ def _degree(d, root):
 
 def render(root):
     parts = [timeline([_degree(d, root) for d in EDUCATION["degrees"]])]
-    if EDUCATION.get("coursework"):
+    if EDUCATION.get("show_coursework") and EDUCATION.get("coursework"):
         parts.append('<h3 class="minor-heading">Undergraduate coursework</h3>')
         parts.append(tags(EDUCATION["coursework"]))
     online = EDUCATION.get("online_courses") or {}
-    if online.get("items"):
+    if EDUCATION.get("show_online_courses") and online.get("items"):
         parts.append('<h3 class="minor-heading">Online courses (%s)</h3>' % e(online["provider"]))
         parts.append(bullets(online["items"], root=root))
     return "".join(parts)
