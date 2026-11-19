@@ -38,6 +38,8 @@
   "_venue_note": "Set to false to show papers under review as just 'Under review', without naming the venue they were submitted to (some double-blind venues discourage publicising submissions).",
   "show_venue_for_under_review": true,
   "positioning": "I build computer vision systems that have to hold up outside the notebook: detectors that drive a robot arm on a live production line, video models that learn from what they find hardest, and benchmarks that say plainly when a learned method beats a statistical one.",
+  "_callout_note": "Optional highlighted note at the top of About, e.g. \"**Open to internships for summer 2027.** Reach me by [email](mailto:you@example.com).\" null hides it.",
+  "callout": null,
   "intro": "I am a Ph.D. student in Computer Science at Kennesaw State University, working in the Sustainable Smart Systems Lab (S³ Lab) with my advisor, Bobin Deng. Before the Ph.D. I spent eight years at BJIT Ltd., moving from Software Engineer to Principal Software Engineer, building secure microservices, retrieval-augmented knowledge tools, and enterprise PLM integrations.",
   "bio_short": "Priyabrota Sen is a doctoral researcher in Computer Science at Kennesaw State University, working on computer vision, video world models, and the evaluation of learned systems under real operating conditions. Current work spans a vision-driven digital twin for robotic production lines, a benchmark for learned noise adaptation in quantum error-correction streams, and difficulty-ranked masking for video world models. Before starting the Ph.D. in 2025, Sen spent eight years at BJIT Ltd., rising from Software Engineer to Principal Software Engineer and delivering secure Java/Spring Boot services, retrieval-augmented knowledge tools, and Dassault Systèmes ENOVIA PLM/PDM integrations.",
   "bio_long": [
@@ -268,5 +270,6 @@
     "Member, blood donation club, BJIT",
     "Member, SGIPC (KUET programming club)",
     "Member, TRY (KUET social service club)"
-  ]
+  ],
+  "_text_note": "Bio paragraphs, news and the callout support [links](https://example.com), **bold** and *italic*."
 }

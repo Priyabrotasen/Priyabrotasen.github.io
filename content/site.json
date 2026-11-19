@@ -1,0 +1,15 @@
+{
+  "_readme": "The homepage is built from this ordered list. Each entry names a module in sitegen/sections/. Reorder entries to reorder the page; set \"enabled\": false to hide one; add an entry (plus a module file) to add a new section. `nav` is the label in the top bar (null = not in the nav). `title` is the section heading (null = no heading). A section whose module returns nothing is skipped automatically.",
+  "sections": [
+    { "module": "about",        "id": "about",        "nav": "About",        "title": null },
+    { "module": "news",         "id": "news",         "nav": "News",         "title": "News" },
+    { "module": "research",     "id": "research",     "nav": "Research",     "title": "Research" },
+    { "module": "publications", "id": "publications", "nav": "Publications", "title": "Publications" },
+    { "module": "experience",   "id": "experience",   "nav": "Experience",   "title": "Experience" },
+    { "module": "projects",     "id": "projects",     "nav": "Projects",     "title": "Industry Projects" },
+    { "module": "education",    "id": "education",    "nav": "Education",    "title": "Education" },
+    { "module": "skills",       "id": "skills",       "nav": "Skills",       "title": "Technical Skills" },
+    { "module": "awards",       "id": "awards",       "nav": "Awards",       "title": "Honors & Awards" },
+    { "module": "service",      "id": "service",      "nav": "Service",      "title": "Service" }
+  ]
+}

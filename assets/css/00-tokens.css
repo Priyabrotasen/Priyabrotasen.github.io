@@ -1,0 +1,57 @@
+/* Design tokens. Change the look of the whole site from here.
+   To switch the accent colour, edit --accent / --accent-strong / --accent-soft
+   in the light block and in BOTH dark blocks below. */
+:root {
+  --bg: #ffffff;
+  --card: #f3f7f6;
+  --card-hover: #eaf1ef;
+  --text: #1c2523;
+  --muted: #55615e;
+  --faint: #6c7774;
+  --border: #e1e8e6;
+  --accent: #0b6b5f;
+  --accent-strong: #08564c;
+  --accent-soft: #e2f1ee;
+  --on-accent: #ffffff;
+
+  --font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --mono: ui-monospace, "Cascadia Mono", Consolas, monospace;
+
+  --container: 1120px;
+  --gutter: clamp(18px, 4vw, 32px);
+  --sidebar: 250px;
+  --radius: 8px;
+  --nav-height: 56px;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #101514;
+    --card: #182120;
+    --card-hover: #1e2a28;
+    --text: #e7ecea;
+    --muted: #a7b3af;
+    --faint: #8b9793;
+    --border: #283431;
+    --accent: #6fd3c2;
+    --accent-strong: #93e2d4;
+    --accent-soft: #17302c;
+    --on-accent: #06211d;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #101514;
+  --card: #182120;
+  --card-hover: #1e2a28;
+  --text: #e7ecea;
+  --muted: #a7b3af;
+  --faint: #8b9793;
+  --border: #283431;
+  --accent: #6fd3c2;
+  --accent-strong: #93e2d4;
+  --accent-soft: #17302c;
+  --on-accent: #06211d;
+  color-scheme: dark;
+}
