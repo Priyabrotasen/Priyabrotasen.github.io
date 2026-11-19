@@ -1,0 +1,120 @@
+{
+  "_readme": "Newest first. kind: research | industry. `workstreams` are optional sub-sections; `project` links a workstream to a slug in projects.json.",
+  "items": [
+    {
+      "org": "Kennesaw State University",
+      "org_full": "Sustainable Smart Systems Lab (S³ Lab)",
+      "location": "Georgia, USA",
+      "kind": "research",
+      "period": "2025 – Present",
+      "current": true,
+      "roles": [
+        {
+          "title": "Doctoral Researcher, AI and Computer Vision",
+          "period": "2025 – Present"
+        }
+      ],
+      "bullets": [
+        "Fine-tuned a COCO-pretrained YOLOv11s detector on a custom production-line dataset, reaching 99.76% mAP@50, 100% precision, and 99.6% recall on held-out test images.",
+        "Deployed the detector with SORT tracking on four live cameras to drive a six-axis robot arm, at 212 ms mean perception latency.",
+        "Validated the deployed system in four independent end-to-end tests: 190 of 213 objects (89.2%) completed the full detect, route, and pick-and-place cycle.",
+        "Built a 54.1-million-sample video benchmark and compared five model variants over three seeds against tuned statistical baselines, with paired significance tests.",
+        "Calibrated alarm thresholds with conformal prediction, holding false-alarm rates to 3–9% against a 5% target on held-out data.",
+        "Designed a hard-example masking method for video world models that cut 32-step rollout error (RMSE) by 33–48% against the C-JEPA baseline.",
+        "First author of three papers under review (CVPR, ICRA, ICASSP 2027); reviewed 4 submissions for IEEE ICASSP 2027."
+      ],
+      "tech": [
+        "Python",
+        "PyTorch",
+        "YOLOv11",
+        "SORT",
+        "Video transformers",
+        "JEPA",
+        "Conformal prediction",
+        "Roboflow",
+        "Unity 3D",
+        "3D Gaussian Splatting"
+      ],
+      "workstreams": []
+    },
+    {
+      "org": "BJIT Ltd.",
+      "org_full": "Bangladesh Japan Information and Technology Limited",
+      "location": "Bangladesh",
+      "kind": "industry",
+      "period": "2017 – 2025",
+      "current": false,
+      "roles": [
+        {
+          "title": "Principal Software Engineer",
+          "period": "Jul 2024 – 2025"
+        },
+        {
+          "title": "Senior Software Engineer",
+          "period": "2020 – 2024"
+        },
+        {
+          "title": "Software Engineer",
+          "period": "2017 – 2020"
+        }
+      ],
+      "bullets": [
+        "Promoted twice, from Software Engineer to Principal Software Engineer; named Best Senior Engineer of the Year in 2022.",
+        "Developed enterprise applications, integration systems, and secure APIs for technical business workflows."
+      ],
+      "tech": [],
+      "workstreams": [
+        {
+          "title": "Retrieval-Augmented Knowledge System (RAG)",
+          "project": "rag-powered-mql",
+          "bullets": [
+            "Built a document-processing and retrieval-augmented generation pipeline in Python with PyMuPDF and GPT-4o.",
+            "Enabled engineers to query specialised technical knowledge directly from enterprise PDF documentation."
+          ],
+          "tech": [
+            "Python",
+            "GPT-4o",
+            "PyMuPDF",
+            "RAG"
+          ]
+        },
+        {
+          "title": "Secure Document Watermarking API",
+          "project": "watermark-api",
+          "bullets": [
+            "Delivered a REST-based PDF watermarking service in Java/Spring Boot with batch processing.",
+            "Secured the service with OAuth2/JWT authentication and HashiCorp Vault secrets management.",
+            "Set up deployment and operational monitoring with Grafana and Prometheus."
+          ],
+          "tech": [
+            "Java",
+            "Spring Boot",
+            "OAuth2 / JWT",
+            "HashiCorp Vault",
+            "Grafana",
+            "Prometheus"
+          ]
+        },
+        {
+          "title": "Enterprise PLM/PDM System Integrations",
+          "project": "enovia-plm",
+          "bullets": [
+            "Implemented components for Dassault Systèmes ENOVIA / 3DEXPERIENCE product-data workflows and software integrations.",
+            "Carried out data exchange and migration between PLM/PDM systems.",
+            "Modernised web-based workflows with TVC-framework frontend enhancements."
+          ],
+          "tech": [
+            "Java",
+            "Spring Boot",
+            "ENOVIA",
+            "MQL",
+            "TCL",
+            "TVC framework",
+            "Struts",
+            "Ajax"
+          ]
+        }
+      ]
+    }
+  ]
+}

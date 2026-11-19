@@ -1,0 +1,272 @@
+{
+  "_readme": "Edit this file to change site-wide details. A value of null means the item is hidden on the site. Entries listed in `todo` are things only you can supply.",
+  "todo": [
+    "photo: currently a dummy image - replace assets/portrait-placeholder.svg with a real portrait (e.g. assets/portrait.jpg) and update \"photo\"",
+    "links.orcid: no ORCID appears in either CV",
+    "bio_short / bio_long: drafted from the two CVs - review the wording, especially the statements about motivation",
+    "cv: links are hidden. Add cleaned CV PDFs and set cv.academic.source / cv.professional.source"
+  ],
+  "name": "Priyabrota Sen",
+  "initials": "PS",
+  "author_name": "P. Sen",
+  "title": "Doctoral Researcher in AI and Computer Vision",
+  "affiliation": {
+    "institution": "Kennesaw State University",
+    "unit": "Sustainable Smart Systems Lab (S³ Lab)",
+    "location": "Georgia, USA"
+  },
+  "email": "psen3@students.kennesaw.edu",
+  "photo": "assets/portrait-placeholder.svg",
+  "site_url": "https://priyabrotasen.github.io",
+  "links": {
+    "scholar": "https://scholar.google.com/citations?user=TzkaZ6cAAAAJ&hl=en",
+    "linkedin": "https://www.linkedin.com/in/priyabrota-sen/",
+    "github": "https://github.com/Priyabrotasen",
+    "orcid": null
+  },
+  "_cv_note": "To show a CV link: put a web-safe PDF (no phone numbers or referee contact details) in the project root, set its `source` to that filename, and remove the file from .gitignore if listed. A link is shown only when `source` points to an existing file.",
+  "cv": {
+    "academic": {
+      "source": null,
+      "publish_as": "Priyabrota_Sen_Academic_CV.pdf"
+    },
+    "professional": {
+      "source": null,
+      "publish_as": "Priyabrota_Sen_Professional_CV.pdf"
+    }
+  },
+  "_venue_note": "Set to false to show papers under review as just 'Under review', without naming the venue they were submitted to (some double-blind venues discourage publicising submissions).",
+  "show_venue_for_under_review": true,
+  "positioning": "I build computer vision systems that have to hold up outside the notebook: detectors that drive a robot arm on a live production line, video models that learn from what they find hardest, and benchmarks that say plainly when a learned method beats a statistical one.",
+  "intro": "I am a Ph.D. student in Computer Science at Kennesaw State University, working in the Sustainable Smart Systems Lab (S³ Lab) with my advisor, Bobin Deng. Before the Ph.D. I spent eight years at BJIT Ltd., moving from Software Engineer to Principal Software Engineer, building secure microservices, retrieval-augmented knowledge tools, and enterprise PLM integrations.",
+  "bio_short": "Priyabrota Sen is a doctoral researcher in Computer Science at Kennesaw State University, working on computer vision, video world models, and the evaluation of learned systems under real operating conditions. Current work spans a vision-driven digital twin for robotic production lines, a benchmark for learned noise adaptation in quantum error-correction streams, and difficulty-ranked masking for video world models. Before starting the Ph.D. in 2025, Sen spent eight years at BJIT Ltd., rising from Software Engineer to Principal Software Engineer and delivering secure Java/Spring Boot services, retrieval-augmented knowledge tools, and Dassault Systèmes ENOVIA PLM/PDM integrations.",
+  "bio_long": [
+    "I am a doctoral researcher in Computer Science at Kennesaw State University, in the Sustainable Smart Systems Lab (S³ Lab) advised by Bobin Deng, where I work on computer vision and machine learning for systems that operate in the physical world. My current research follows three threads: a closed-loop digital twin in which a fine-tuned detector and multi-camera tracking drive a six-axis robot arm on a production-line testbed; video world models that decide what to mask during training by ranking objects by how hard they are to predict; and a large benchmark that treats quantum error-correction measurements as sparse binary video.",
+    "A common concern runs through all three: careful evaluation. I build datasets and benchmarks with held-out and calibration splits, compare models against tuned statistical baselines over multiple seeds, test differences for significance, and report where a learned method loses as well as where it wins. Several collaborations extend this to conformal prediction and calibrated decision-making in medical and surgical video.",
+    "I came to research after eight years in industry. At BJIT Ltd. in Bangladesh I was promoted twice, from Software Engineer to Senior and then Principal Software Engineer, and was named Best Senior Engineer of the Year in 2022. I built Java/Spring Boot microservices secured with OAuth2/JWT and HashiCorp Vault, a retrieval-augmented generation tool over enterprise PDF documentation, and integrations and data migrations for Dassault Systèmes ENOVIA / 3DEXPERIENCE PLM and PDM platforms.",
+    "That background shapes how I work now. I care about whether a model still performs after it is deployed, which is why my research reports latency on live camera streams, end-to-end task success on real hardware, and stage-by-stage error analysis alongside benchmark accuracy.",
+    "I hold a B.Sc. in Computer Science and Engineering from Khulna University of Engineering & Technology (KUET), where my thesis on error-correcting codes for memory reliability led to an IEEE conference paper."
+  ],
+  "trajectory": [
+    {
+      "period": "2025 – Present",
+      "title": "Ph.D. in Computer Science",
+      "text": "Kennesaw State University, Sustainable Smart Systems Lab (S³ Lab). Doctoral researcher in AI and computer vision."
+    },
+    {
+      "period": "Jul 2024 – 2025",
+      "title": "Principal Software Engineer",
+      "text": "BJIT Ltd."
+    },
+    {
+      "period": "2020 – 2024",
+      "title": "Senior Software Engineer",
+      "text": "BJIT Ltd. Best Senior Engineer of the Year, 2022."
+    },
+    {
+      "period": "2017 – 2020",
+      "title": "Software Engineer",
+      "text": "BJIT Ltd."
+    },
+    {
+      "period": "2013 – 2017",
+      "title": "B.Sc. in Computer Science and Engineering",
+      "text": "KUET. Thesis on error-correcting codes for memory reliability."
+    }
+  ],
+  "interests": [
+    {
+      "title": "Vision for production systems",
+      "text": "Object detection, multi-object tracking, and multi-camera live inference that drive robots and digital twins."
+    },
+    {
+      "title": "Video world models",
+      "text": "Self-supervised, object-centric video learning in the JEPA family, with difficulty-aware masking."
+    },
+    {
+      "title": "Evaluation and calibration",
+      "text": "Benchmark construction, controlled comparisons, conformal prediction, and threshold calibration."
+    },
+    {
+      "title": "Learned monitoring of signal streams",
+      "text": "Video transformers applied to quantum error-correction measurement streams and drift detection."
+    },
+    {
+      "title": "Applied AI systems",
+      "text": "Retrieval-augmented generation and production software engineering for enterprise workflows."
+    },
+    {
+      "title": "Reliable memory systems",
+      "text": "Error-correcting codes that tolerate multiple cell upsets, from my undergraduate thesis."
+    }
+  ],
+  "metrics": [
+    {
+      "value": "89.2%",
+      "label": "End-to-end success on a live robotic line",
+      "detail": "190 of 213 objects completed detect, route, and pick-and-place"
+    },
+    {
+      "value": "54.1M",
+      "label": "Samples in the QEC-Drift video benchmark",
+      "detail": "8,448 streams across four drift types"
+    },
+    {
+      "value": "33–48%",
+      "label": "Lower 32-step rollout error",
+      "detail": "DOR-JEPA against the C-JEPA baseline on CLEVRER"
+    },
+    {
+      "value": "8 yrs",
+      "label": "Production software engineering",
+      "detail": "Software Engineer to Principal at BJIT Ltd."
+    }
+  ],
+  "professional_highlights": [
+    {
+      "title": "Promoted twice at BJIT Ltd.",
+      "text": "Software Engineer (2017), Senior Software Engineer (2020), Principal Software Engineer (2024)."
+    },
+    {
+      "title": "Best Senior Engineer of the Year, 2022",
+      "text": "Awarded by BJIT Ltd."
+    },
+    {
+      "title": "Retrieval-augmented knowledge system",
+      "text": "A Python, PyMuPDF, and GPT-4o pipeline that lets engineers query specialised technical knowledge from enterprise PDF documentation."
+    },
+    {
+      "title": "Secure document watermarking API",
+      "text": "A Java/Spring Boot service with batch processing, OAuth2/JWT, HashiCorp Vault, and Grafana/Prometheus monitoring."
+    },
+    {
+      "title": "Enterprise PLM/PDM integrations",
+      "text": "Integrations and data migrations for Dassault Systèmes ENOVIA / 3DEXPERIENCE product-data workflows."
+    },
+    {
+      "title": "Reviewer, IEEE ICASSP 2027",
+      "text": "Reviewed four submissions."
+    }
+  ],
+  "skills": [
+    {
+      "group": "Production computer vision",
+      "items": [
+        "PyTorch",
+        "YOLOv11 fine-tuning and deployment",
+        "Object detection and localization",
+        "Multi-object tracking (SORT)",
+        "Multi-camera live inference",
+        "Video transformers",
+        "DINOv2",
+        "VideoSAUR"
+      ]
+    },
+    {
+      "group": "Model evaluation and error analysis",
+      "items": [
+        "Precision, recall, F1, mAP, AUROC",
+        "Threshold calibration (conformal prediction)",
+        "False-alarm and missed-detection analysis",
+        "Per-camera and stage-wise error slicing"
+      ]
+    },
+    {
+      "group": "Datasets and annotation quality",
+      "items": [
+        "Bounding-box annotation and augmentation (Roboflow)",
+        "Train / validation / calibration / test splits",
+        "Held-out evaluation sets",
+        "Benchmark construction",
+        "Hard-example sampling"
+      ]
+    },
+    {
+      "group": "Python and ML frameworks",
+      "items": [
+        "Python",
+        "SQL",
+        "PyTorch",
+        "FFmpeg",
+        "COLMAP",
+        "Self-supervised learning (JEPA, VICReg, masked reconstruction)"
+      ]
+    },
+    {
+      "group": "Experiment design and validation",
+      "items": [
+        "Controlled baseline comparisons",
+        "Ablations",
+        "Multi-seed runs",
+        "McNemar significance tests",
+        "Post-deployment validation on live systems",
+        "Latency measurement"
+      ]
+    },
+    {
+      "group": "Software engineering",
+      "items": [
+        "Java",
+        "C / C++",
+        "C#",
+        "JavaScript",
+        "Spring Boot",
+        "Java EE",
+        "Apache Struts",
+        "Hibernate",
+        "REST APIs",
+        "Microservices",
+        "Docker",
+        "Linux",
+        "Git",
+        "Maven",
+        "AWS",
+        "Grafana",
+        "Prometheus",
+        "Loki",
+        "OAuth2 / JWT",
+        "HashiCorp Vault"
+      ]
+    },
+    {
+      "group": "Data and enterprise platforms",
+      "items": [
+        "MySQL",
+        "Oracle 11g",
+        "MongoDB",
+        "Apache Solr",
+        "ENOVIA / 3DEXPERIENCE",
+        "MQL",
+        "TCL",
+        "TVC framework"
+      ]
+    },
+    {
+      "group": "Applied AI and 3D",
+      "items": [
+        "Retrieval-augmented generation (GPT-4o, PyMuPDF)",
+        "Unity 3D",
+        "3D Gaussian Splatting",
+        "xArm Python SDK"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Best Senior Engineer of the Year",
+      "org": "BJIT Ltd.",
+      "year": "2022"
+    }
+  ],
+  "service": [
+    {
+      "title": "Reviewer, IEEE ICASSP 2027",
+      "detail": "Toronto, Canada. Reviewed 4 submissions."
+    }
+  ],
+  "volunteering": [
+    "Member, blood donation club, BJIT",
+    "Member, SGIPC (KUET programming club)",
+    "Member, TRY (KUET social service club)"
+  ]
+}

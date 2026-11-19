@@ -1,0 +1,9 @@
+dist/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# Original CVs: contain phone numbers and referee contact details
+Academic_CV.pdf
+Professinal_CV.pdf

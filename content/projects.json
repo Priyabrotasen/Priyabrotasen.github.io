@@ -1,0 +1,215 @@
+{
+  "_readme": "Add a project by appending an object. category: research | industry | independent. Every project gets its own page at projects/<slug>.html. Optional fields set to null or [] are hidden. `image` is a path under assets/ (e.g. assets/projects/twin.png). No independent projects appear in the CVs yet; add one with category \"independent\" and the tab appears automatically.",
+  "items": [
+    {
+      "slug": "closed-loop-digital-twin",
+      "title": "Vision-Driven Closed-Loop Digital Twin for Production Lines",
+      "category": "research",
+      "area": "Computer vision · Robotics · Digital twins",
+      "status": "Ongoing · paper under review",
+      "role": "First author",
+      "featured": true,
+      "summary": "A real-time digital twin of a conveyor production line in which a fine-tuned detector and multi-camera tracking drive a six-axis robot arm, validated end to end on live hardware.",
+      "description": [
+        "This project builds a real-time digital twin of a conveyor-based production line. Sensor data streams, computer vision, 3D Gaussian Splatting, Unity 3D, and machine learning models are combined to mirror the physical line in a virtual environment with high synchronisation, and to predict production quality and quantity so that decisions can be made before problems reach the line.",
+        "A YOLOv11s detector, fine-tuned from COCO weights on a custom production-line dataset, runs with SORT tracking on four live cameras. Its detections update the twin and drive a six-axis robot arm through a detect, route, and pick-and-place cycle."
+      ],
+      "contribution": [
+        "Research and development, coding, hardware deployment, and testing.",
+        "Manually annotated 594 product images with bounding boxes in Roboflow, split 476 / 59 / 59 for training, validation, and test, and augmented with rotation, hue, brightness, exposure, motion blur, and noise.",
+        "Fine-tuned YOLOv11s at 640×640 and deployed it with per-camera regions of interest and SORT tracking on live 1080p streams.",
+        "Ran four independent end-to-end validation tests and a stage-wise error analysis that separates perception, routing, and manipulation failures."
+      ],
+      "methods": ["Python", "YOLOv11s", "SORT tracking", "Roboflow", "Multi-camera live inference", "Unity 3D", "C#", "3D Gaussian Splatting", "Six-axis robot arm"],
+      "results": [
+        "99.76% mAP@50, 100% precision, and 99.6% recall on held-out test images; 85.35% mAP@50:95 and a 99.8% F1-score on the test set.",
+        "212 ms mean perception latency across four live cameras; 95% of 519 object observations reached the digital twin in under 300 ms.",
+        "190 of 213 objects (89.2%) completed the full detect, route, and pick-and-place cycle across four independent end-to-end tests.",
+        "Per-camera miss rates of 2.5%, 11.8%, and 8.0% were traced to closely spaced boxes merging at object creation, not to detector misses.",
+        "The robot camera detected all 51 routed products and the arm placed 45 (88.2%), isolating the remaining failures to manipulation.",
+        "Routing messages averaged 2.74 ms round trip with 100% acknowledgment over 2,561 exchanges."
+      ],
+      "image": null,
+      "links": { "paper": null, "code": null, "demo": null },
+      "publication": "closed-loop-digital-twin"
+    },
+    {
+      "slug": "syndrome-videos",
+      "title": "Syndrome Videos and the QEC-Drift Benchmark",
+      "category": "research",
+      "area": "Video transformers · Benchmarks · Quantum error correction",
+      "status": "Paper under review",
+      "role": "First author",
+      "featured": true,
+      "summary": "A 54.1-million-sample benchmark and a compact video transformer that treats quantum error-correction measurements as sparse binary video, compared head to head with tuned statistical baselines.",
+      "description": [
+        "Quantum error-correction hardware produces a continuous stream of syndrome measurements whose noise statistics drift over time. This project treats those measurements as sparse binary video and asks when a learned model adapts to drift better than a well-tuned statistical estimator.",
+        "The QEC-Drift benchmark contains 8,448 streams (54.1 million samples) across four drift types, with ground-truth labels, a separate calibration split, and held-out drift magnitudes."
+      ],
+      "contribution": [
+        "Built the QEC-Drift benchmark, including the calibration split and held-out magnitudes.",
+        "Trained a 4.6-million-parameter video transformer in PyTorch on the syndrome streams.",
+        "Ran the controlled comparison against a tuned sliding-window estimator and analysed where each approach fails.",
+        "Built a hybrid monitor that keeps the learned model's gains on short bursts."
+      ],
+      "methods": ["PyTorch", "Video transformers", "Benchmark construction", "Tuned statistical baselines", "Held-out calibration split", "Simulation-to-hardware transfer"],
+      "results": [
+        "The model recovered 72–80% of the achievable decoding gain on short bursts, against 44–67% for a tuned sliding-window estimator.",
+        "It transferred to a larger code without retraining.",
+        "The statistical baseline stays stronger on sustained changes; a hybrid of the two keeps the burst gains.",
+        "With no retraining, the simulation-trained monitor flagged a documented event in a 500,000-shot hardware recording in its first block, alarming on 0.03% of other blocks."
+      ],
+      "image": null,
+      "links": { "paper": null, "code": null, "demo": null },
+      "publication": "syndrome-videos"
+    },
+    {
+      "slug": "dor-jepa",
+      "title": "DOR-JEPA: Difficulty-Ranked Masking for Video World Models",
+      "category": "research",
+      "area": "Self-supervised learning · World models",
+      "status": "Paper under review",
+      "role": "First author",
+      "featured": true,
+      "summary": "A hard-example masking method for object-centric video world models: rank objects by how hard they are to predict, then mask the hardest during training.",
+      "description": [
+        "Joint-embedding predictive world models learn by predicting masked parts of a scene. DOR-JEPA chooses what to mask deliberately: objects are ranked by a running average of prediction error and by motion, and the hardest are masked during training."
+      ],
+      "contribution": [
+        "Designed the difficulty-ranked masking method.",
+        "Evaluated long-horizon rollouts on CLEVRER and Push-T against the C-JEPA baseline.",
+        "Ran the downstream counterfactual question-answering check and the ablation on chunked selection."
+      ],
+      "methods": ["PyTorch", "JEPA", "Object-centric (slot) representations", "Hard-example sampling", "CLEVRER", "Push-T", "Ablation studies"],
+      "results": [
+        "Cut 32-step rollout RMSE by 33–48% on CLEVRER and 35–37% on Push-T against the C-JEPA baseline.",
+        "Raised counterfactual question-answering accuracy from 49.7% to 61.0% with one masked object.",
+        "An ablation confirmed that chunked selection helps at two or more masks."
+      ],
+      "image": null,
+      "links": { "paper": null, "code": null, "demo": null },
+      "publication": "dor-jepa"
+    },
+    {
+      "slug": "memory-reliability",
+      "title": "Towards Enhancing Memory Reliability",
+      "category": "research",
+      "area": "Fault tolerance · Error-correcting codes",
+      "status": "Completed · B.Sc. thesis",
+      "role": "Thesis author. Supervisor: Dr. Muhammad Sheikh Sadi, Professor, CSE, KUET",
+      "featured": false,
+      "summary": "An enhanced Decimal Matrix Code that tolerates multiple cell upsets in memory with better detection and lower overhead.",
+      "description": [
+        "Multiple cell upsets (MCUs) are a growing reliability problem in memory systems. This undergraduate thesis developed an improved error-correction method based on an enhanced version of Decimal Matrix Code (DMC) that increases error-detection capability while minimising time overhead.",
+        "The work was published as an IEEE conference paper, \"A New Error Correcting Coding Technique to Tolerate Soft Errors\"."
+      ],
+      "contribution": [
+        "Proposed the enhanced Decimal Matrix Code and carried out the simulations comparing it with existing error-correcting codes."
+      ],
+      "methods": ["Error-correcting codes", "Decimal Matrix Code (DMC)", "Soft-error tolerance", "Simulation"],
+      "results": [
+        "Better error detection and correction with lower overhead than existing error-correcting codes.",
+        "Superior performance in simulation, particularly with more than three erroneous bits.",
+        "Fewer redundant bits than standard DMC."
+      ],
+      "image": null,
+      "links": { "paper": "https://doi.org/10.1109/ICECIT54077.2021.9641342", "code": null, "demo": null },
+      "publication": "error-correcting-coding"
+    },
+    {
+      "slug": "rag-powered-mql",
+      "title": "RAG-Powered MQL: Retrieval-Augmented Knowledge System",
+      "category": "industry",
+      "area": "Applied AI · Retrieval-augmented generation",
+      "status": "Delivered at BJIT Ltd.",
+      "role": "Research and development, coding, parsing, testing",
+      "featured": false,
+      "summary": "A document-processing and retrieval-augmented generation pipeline that lets engineers query specialised PLM knowledge directly from enterprise PDF documentation.",
+      "description": [
+        "This project pairs GPT-4o (gpt-4o-2024-11-20) with a retrieval-augmented generation pipeline over domain-specific PDF documents covering TCL, MQL, ENOVIA, eMatrix, and the TVC framework.",
+        "The aim is context-aware text generation tailored to these specialised technical domains, so that engineers can ask questions and get answers grounded in the documentation."
+      ],
+      "contribution": [
+        "Built the document-processing and RAG pipeline in Python with PyMuPDF and GPT-4o.",
+        "Research and development, coding, document parsing, and testing."
+      ],
+      "methods": ["Python", "GPT-4o", "PyMuPDF", "Retrieval-augmented generation", "bitsandbytes", "Google Colab", "NLP"],
+      "results": [
+        "Enabled engineers to query specialised technical knowledge directly from enterprise PDF documentation."
+      ],
+      "image": null,
+      "links": { "paper": null, "code": null, "demo": null },
+      "publication": null
+    },
+    {
+      "slug": "watermark-api",
+      "title": "Secure Document Watermarking API",
+      "category": "industry",
+      "area": "Backend engineering · Security · Observability",
+      "status": "Delivered at BJIT Ltd.",
+      "role": "Development, testing, integration, deployment, maintenance, and monitoring",
+      "featured": false,
+      "summary": "A RESTful Java/Spring Boot service that watermarks single or batched PDF files behind OAuth2/JWT, with secrets in HashiCorp Vault and full operational monitoring.",
+      "description": [
+        "The service accepts one or many PDF files. After authentication and authorisation it stamps each file with the client's logo and, optionally, the downloading user's name or ID number (\"Downloaded by ...\").",
+        "A single upload returns the watermarked PDF; a batch upload returns a ZIP archive of the watermarked files."
+      ],
+      "contribution": [
+        "Delivered the REST-based watermarking service in Java/Spring Boot with batch processing.",
+        "Secured it with OAuth2/JWT authentication and HashiCorp Vault secrets management.",
+        "Set up deployment and operational monitoring with Grafana and Prometheus."
+      ],
+      "methods": ["Java", "Spring Boot", "Spring Security", "OAuth2 with JWT", "Maven", "Swagger / OpenAPI", "REST API", "HashiCorp Vault", "Grafana", "Prometheus", "Loki", "Promtail", "PromQL", "JUnit", "SLF4J"],
+      "results": [],
+      "image": null,
+      "links": { "paper": null, "code": null, "demo": null },
+      "publication": null
+    },
+    {
+      "slug": "enovia-plm",
+      "title": "ENOVIA PLM Integrations",
+      "category": "industry",
+      "area": "Enterprise software · Product lifecycle management",
+      "status": "Delivered at BJIT Ltd.",
+      "role": "Deployment, maintenance, testing, data migration, integration development, support",
+      "featured": false,
+      "summary": "An integrated solution on Dassault Systèmes ENOVIA / 3DEXPERIENCE that lets a customer exchange and control product data with ERPs, CAD tools, and document-archiving systems.",
+      "description": [
+        "ENOVIA, on the 3DEXPERIENCE platform, is part of the Product Lifecycle Management (PLM) solution from Dassault Systèmes. Customers use it to manage engineering and manufacturing product data from idea generation, design, manufacturing, and supply through versioning to end-of-support management.",
+        "I worked on and delivered an integrated solution that enables the customer to exchange and control data communication with different ERPs, design CAD software, and document-archiving software."
+      ],
+      "contribution": [
+        "Implemented components for ENOVIA / 3DEXPERIENCE product-data workflows and software integrations.",
+        "Carried out data exchange and migration between PLM/PDM systems.",
+        "Implemented PLM methodologies in the client environment, and handled deployment, maintenance, testing, and support."
+      ],
+      "methods": ["Java", "J2EE", "Spring", "Spring Boot", "Ajax", "XML", "JavaScript", "Apache HAProxy", "ENOVIA", "SQL Server", "RabbitMQ", "RequireJS", "jQuery", "REST services"],
+      "results": [],
+      "image": null,
+      "links": { "paper": null, "code": null, "demo": null },
+      "publication": null
+    },
+    {
+      "slug": "pdm-tvc",
+      "title": "PDM Modernisation with the TVC Framework",
+      "category": "industry",
+      "area": "Enterprise software · Frontend modernisation",
+      "status": "Delivered at BJIT Ltd.",
+      "role": "Deployment, maintenance, testing, support",
+      "featured": false,
+      "summary": "Integration of the TVC framework into Dassault Systèmes Product Data Management software to improve the frontend and the experience of managing product data.",
+      "description": [
+        "The project integrated the TVC framework into the Product Data Management (PDM) software developed by Dassault Systèmes. The aim was to enhance the frontend of the PDM system and improve the user experience of managing product data and lifecycle processes."
+      ],
+      "contribution": [
+        "Modernised web-based workflows with TVC-framework frontend enhancements.",
+        "Deployment, maintenance, testing, and support."
+      ],
+      "methods": ["Java", "J2EE", "Spring", "Spring Boot", "Ajax", "XML", "JavaScript", "TVC framework"],
+      "results": [],
+      "image": null,
+      "links": { "paper": null, "code": null, "demo": null },
+      "publication": null
+    }
+  ]
+}

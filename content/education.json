@@ -1,0 +1,69 @@
+{
+  "_readme": "Newest first. null fields are hidden.",
+  "degrees": [
+    {
+      "degree": "Ph.D. in Computer Science",
+      "note": "In progress",
+      "institution": "Kennesaw State University",
+      "department": null,
+      "location": "Georgia, USA",
+      "period": "2025 – Present",
+      "advisor": "Bobin Deng",
+      "specialization": "Computer vision, video world models, and the evaluation of learned systems for production and robotic settings.",
+      "distinctions": [
+        "First author of three papers under review (CVPR, ICRA, ICASSP 2027)",
+        "Reviewer, IEEE ICASSP 2027"
+      ],
+      "thesis": null,
+      "lab": "Sustainable Smart Systems Lab (S³ Lab)"
+    },
+    {
+      "degree": "B.Sc. in Computer Science and Engineering",
+      "note": null,
+      "institution": "Khulna University of Engineering & Technology (KUET)",
+      "department": "Department of Computer Science and Engineering",
+      "location": "Khulna, Bangladesh",
+      "period": "2013 – 2017",
+      "advisor": "Dr. Muhammad Sheikh Sadi (thesis supervisor)",
+      "specialization": "Fault-tolerant memory systems and error-correcting codes.",
+      "distinctions": [
+        "CGPA 3.58 / 4.00 (WES-evaluated 3.68 / 4.00)",
+        "Thesis work published at ICECIT 2021 (IEEE)"
+      ],
+      "thesis": {
+        "title": "Towards Enhancing Memory Reliability",
+        "project": "memory-reliability"
+      }
+    }
+  ],
+  "coursework": [
+    "Machine Learning",
+    "Data Mining",
+    "Artificial Intelligence",
+    "Computer Vision and Image Processing",
+    "Computer Graphics",
+    "Algorithm Analysis and Design",
+    "Data Structures and Algorithms",
+    "Operating Systems",
+    "Database Systems",
+    "Computer Networks",
+    "Compiler Design",
+    "Theory of Computation",
+    "Computer Architecture and Organization",
+    "Digital System Design",
+    "Microprocessors and Assembly Languages",
+    "Numerical Analysis",
+    "Discrete Mathematics",
+    "Object-Oriented Programming"
+  ],
+  "online_courses": {
+    "provider": "Coursera",
+    "items": [
+      "Neural Networks and Deep Learning",
+      "Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization",
+      "Structuring Machine Learning Projects",
+      "Convolutional Neural Networks",
+      "Sequence Models"
+    ]
+  }
+}

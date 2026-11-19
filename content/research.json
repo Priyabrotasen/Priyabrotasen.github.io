@@ -1,0 +1,56 @@
+{
+  "_readme": "Text for the Research page. Project cards on that page come from projects.json (category: research).",
+  "lede": "My research is about making learned perception dependable enough to act on. I work on detectors and trackers that drive physical systems, video models that learn the structure of a scene, and the benchmarks and calibration methods needed to know when either can be trusted.",
+  "areas": [
+    {
+      "title": "Vision for production systems and digital twins",
+      "text": "Fine-tuned object detection, multi-object tracking, and multi-camera live inference that keep a virtual production line in step with the physical one, and close the loop back to a robot arm."
+    },
+    {
+      "title": "Video world models and self-supervised learning",
+      "text": "Object-centric joint-embedding predictive models (JEPA) for video, with training curricula that focus on the objects a model finds hardest to predict."
+    },
+    {
+      "title": "Benchmarks, calibration, and evaluation",
+      "text": "Benchmark construction with calibration and held-out splits, comparisons against tuned statistical baselines, and conformal prediction for alarm thresholds and decision guarantees."
+    },
+    {
+      "title": "Learned monitoring of quantum error-correction streams",
+      "text": "Treating syndrome measurements as sparse binary video, so that a video transformer can track noise drift, and testing that idea against classical estimators and on real hardware recordings."
+    },
+    {
+      "title": "Reliable memory systems",
+      "text": "Earlier work on error-correcting codes that tolerate multiple cell upsets with low overhead."
+    }
+  ],
+  "directions": [
+    "Extending the closed-loop digital twin for production lines, where perception latency, tracking quality, and manipulation success are measured stage by stage on live hardware.",
+    "Hard-example curricula for video world models, building on difficulty-ranked masking.",
+    "Learned and hybrid monitors for drifting signal streams, with alarm rates calibrated on held-out data.",
+    "Collaborative work on conformal prediction and calibrated decisions for surgical video and ordinal medical imaging."
+  ],
+  "methodology": [
+    {
+      "title": "Build the benchmark first",
+      "text": "Datasets with explicit train, validation, calibration, and test splits, held-out conditions, and ground-truth labels, so that claims can be checked."
+    },
+    {
+      "title": "Compare against tuned baselines",
+      "text": "Controlled comparisons with strong statistical baselines, ablations, multiple seeds, and paired significance tests such as McNemar's."
+    },
+    {
+      "title": "Calibrate, then decide",
+      "text": "Thresholds set with conformal prediction and verified against target false-alarm rates on held-out data."
+    },
+    {
+      "title": "Validate after deployment",
+      "text": "Latency measured on live streams, end-to-end task success on real hardware, and per-camera and stage-wise error slicing to find where failures actually come from."
+    }
+  ],
+  "achievements": [
+    "First author of three papers under review: CVPR 2027, IEEE ICRA 2027, and IEEE ICASSP 2027.",
+    "Co-author of two accepted papers: ICICN 2026 and IEEE SMC 2026.",
+    "IEEE conference paper from undergraduate thesis work (ICECIT 2021).",
+    "Reviewer for IEEE ICASSP 2027 (4 submissions)."
+  ]
+}
