@@ -48,9 +48,9 @@
     "show_metrics": false
   },
   "bio_long": [
-    "I am a Ph.D. student in Computer Science at [Kennesaw State University](https://www.kennesaw.edu/), advised by Bobin Deng in the Sustainable Smart Systems Lab (S³ Lab). My research is in computer vision and machine learning for systems that act in the physical world: vision-driven digital twins for robotic production lines, video world models, and the benchmarks and calibration needed to trust them.",
-    "Before the Ph.D. I spent eight years at BJIT Ltd., rising from Software Engineer to Principal Software Engineer, where I built secure Java/Spring Boot microservices, a retrieval-augmented knowledge tool, and Dassault Systèmes ENOVIA PLM integrations.",
-    "I received my B.Sc. in Computer Science and Engineering from [Khulna University of Engineering & Technology](https://www.kuet.ac.bd/) (KUET), where I worked with Prof. Muhammad Sheikh Sadi on error-correcting codes for memory reliability."
+    "I am a Ph.D. student in Computer Science at [Kennesaw State University](https://www.kennesaw.edu/), advised by [Bobin Deng](https://ksuweb.kennesaw.edu/~bdeng2/) in the [Sustainable Smart Systems Lab (S³ Lab)](https://ksuweb.kennesaw.edu/~bdeng2/). My research is in computer vision and machine learning for systems that act in the physical world: vision-driven digital twins for robotic production lines, video world models, and the benchmarks and calibration needed to trust them.",
+    "Before the Ph.D. I spent eight years at [BJIT Ltd.](https://bjitgroup.com/), rising from Software Engineer to Principal Software Engineer, where I built secure Java/Spring Boot microservices, a retrieval-augmented knowledge tool, and Dassault Systèmes ENOVIA PLM integrations.",
+    "I received my B.Sc. in Computer Science and Engineering from [Khulna University of Engineering & Technology](https://www.kuet.ac.bd/) (KUET), where I worked with [Prof. Muhammad Sheikh Sadi](https://kuet.ac.bd/cse/sadi) on error-correcting codes for memory reliability."
   ],
   "trajectory": [
     {
