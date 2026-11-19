@@ -13,3 +13,6 @@ Professinal_CV.pdf
 /*.jpg
 /*.jpeg
 /*.png
+
+# Folder of original photos; web-sized copies live under assets/
+/images/
