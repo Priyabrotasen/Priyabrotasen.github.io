@@ -51,7 +51,7 @@ def bibtex(pub):
     else:
         kind = {"journal": "article", "chapter": "incollection"}.get(pub["type"], "inproceedings")
         fields += [("journal" if kind == "article" else "booktitle", pub["venue"]), ("year", str(pub["year"]))]
-        for key, name in [("location", "address"), ("publisher", "publisher"), ("doi", "doi")]:
+        for key, name in [("pages", "pages"), ("location", "address"), ("publisher", "publisher"), ("doi", "doi")]:
             if pub.get(key):
                 fields.append((name, pub[key]))
         if pub["status"] == "accepted":
