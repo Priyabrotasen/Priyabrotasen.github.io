@@ -21,7 +21,7 @@
         "Built a 54.1-million-sample video benchmark and compared five model variants over three seeds against tuned statistical baselines, with paired significance tests.",
         "Calibrated alarm thresholds with conformal prediction, holding false-alarm rates to 3–9% against a 5% target on held-out data.",
         "Designed a hard-example masking method for video world models that cut 32-step rollout error (RMSE) by 33–48% against the C-JEPA baseline.",
-        "First author of three papers under review (CVPR, ICRA, ICASSP 2027); reviewed 4 submissions for IEEE ICASSP 2027."
+        "Reviewed 4 submissions for IEEE ICASSP 2027."
       ],
       "tech": [
         "Python",

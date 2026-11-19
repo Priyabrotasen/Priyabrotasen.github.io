@@ -29,8 +29,7 @@ def render(root):
     note = ""
     scholar = (PROFILE.get("links") or {}).get("scholar")
     if scholar:
-        note = ('<p class="section-intro">Also on <a href="%s" target="_blank" rel="noopener">Google Scholar</a>. '
-                "Papers under review are not public yet; email me for a copy.</p>" % e(scholar))
+        note = '<p class="section-intro">Also on <a href="%s" target="_blank" rel="noopener">Google Scholar</a>.</p>' % e(scholar)
     cards = "".join(publication_card(p, root) for p in PUBS)
     return (
         '%s<div class="filters" id="pub-filters">%s</div>'

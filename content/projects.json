@@ -6,7 +6,7 @@
       "title": "Vision-Driven Closed-Loop Digital Twin for Production Lines",
       "category": "research",
       "area": "Computer vision · Robotics · Digital twins",
-      "status": "Ongoing · paper under review",
+      "status": "Ongoing research",
       "role": "First author",
       "featured": true,
       "summary": "A real-time digital twin of a conveyor production line in which a fine-tuned detector and multi-camera tracking drive a six-axis robot arm, validated end to end on live hardware.",
@@ -45,14 +45,14 @@
         "code": null,
         "demo": "https://www.youtube.com/watch?v=D6dnBsgv1sg&t=2s"
       },
-      "publication": "closed-loop-digital-twin"
+      "publication": null
     },
     {
       "slug": "syndrome-videos",
       "title": "Syndrome Videos and the QEC-Drift Benchmark",
       "category": "research",
       "area": "Video transformers · Benchmarks · Quantum error correction",
-      "status": "Paper under review",
+      "status": "Ongoing research",
       "role": "First author",
       "featured": true,
       "summary": "A 54.1-million-sample benchmark and a compact video transformer that treats quantum error-correction measurements as sparse binary video, compared head to head with tuned statistical baselines.",
@@ -86,14 +86,14 @@
         "code": null,
         "demo": null
       },
-      "publication": "syndrome-videos"
+      "publication": null
     },
     {
       "slug": "dor-jepa",
       "title": "DOR-JEPA: Difficulty-Ranked Masking for Video World Models",
       "category": "research",
       "area": "Self-supervised learning · World models",
-      "status": "Paper under review",
+      "status": "Ongoing research",
       "role": "First author",
       "featured": true,
       "summary": "A hard-example masking method for object-centric video world models: rank objects by how hard they are to predict, then mask the hardest during training.",
@@ -125,7 +125,7 @@
         "code": null,
         "demo": null
       },
-      "publication": "dor-jepa"
+      "publication": null
     },
     {
       "slug": "memory-reliability",

@@ -2,6 +2,86 @@
   "_readme": "One object per paper, newest first. type: journal | conference | workshop | preprint | chapter. status: under-review | accepted | published. Authors are kept exactly as printed in the CV, in original order. Leave unknown links as null; they are hidden. `project` is the slug of a related entry in projects.json.",
   "items": [
     {
+      "id": "hdc-tune",
+      "title": "HDC_Tune: A Lightweight Tuning Framework for Hyperdimensional Computing on Limited Resource Edge Systems",
+      "authors": [
+        "B. Deng",
+        "P. Sen"
+      ],
+      "venue": "ICICN 2026",
+      "location": "Xi'an, China",
+      "publisher": "IEEE",
+      "year": 2026,
+      "type": "conference",
+      "status": "published",
+      "doi": "10.1109/ICICN71760.2026.11744804",
+      "url": "https://ieeexplore.ieee.org/document/11744804",
+      "pdf": null,
+      "arxiv": null,
+      "code": null,
+      "project_page": null,
+      "project": null,
+      "selected": true,
+      "pages": "44-49",
+      "_status_note": "Published in IEEE Xplore (document 11744804); DOI, pages and authors confirmed via Crossref."
+    },
+    {
+      "id": "mm-jepa-tc",
+      "title": "MM-JEPA-TC: Low Cost Multimodal Joint-Embedding Predictive Architecture for Tropical Cyclone Forecasting",
+      "authors": [
+        "K. F. A. Nasif",
+        "M. Frank",
+        "M. M. Islam",
+        "P. Dutta",
+        "M. R. Islam",
+        "P. Sen",
+        "R. Aygun",
+        "B. Deng"
+      ],
+      "venue": "IEEE SMC 2026",
+      "location": "Bellevue, WA, USA",
+      "publisher": null,
+      "year": 2026,
+      "type": "conference",
+      "status": "accepted",
+      "doi": null,
+      "url": null,
+      "pdf": null,
+      "arxiv": null,
+      "code": null,
+      "project_page": null,
+      "project": null,
+      "selected": false
+    },
+    {
+      "_status_note": "The professional CV lists this as 'accepted'; the academic CV gives an IEEE DOI and an IEEE Xplore link, so it is shown as published.",
+      "id": "error-correcting-coding",
+      "title": "A New Error Correcting Coding Technique to Tolerate Soft Errors",
+      "authors": [
+        "P. Sen",
+        "M. S. Sadi",
+        "N. Ashab",
+        "D. Rossi"
+      ],
+      "venue": "ICECIT 2021",
+      "location": null,
+      "publisher": "IEEE",
+      "year": 2021,
+      "type": "conference",
+      "status": "published",
+      "doi": "10.1109/ICECIT54077.2021.9641342",
+      "url": "https://ieeexplore.ieee.org/document/9641342",
+      "pdf": "https://drive.google.com/file/d/19P6vwCpG6xd9xdMyxZZH9EiIS5uRxQ-D/view?usp=sharing",
+      "arxiv": null,
+      "code": null,
+      "project_page": null,
+      "project": "memory-reliability",
+      "selected": true
+    }
+  ],
+  "_archive_note": "`not_shown` holds papers under review. Nothing in it appears on the site. When one is accepted, move it back into `items` and update its status and venue.",
+  "not_shown": [
+    {
       "id": "syndrome-videos",
       "title": "Syndrome Videos: Benchmarking Learned and Statistical Noise Adaptation for Quantum Error-Correction Streams",
       "authors": [
@@ -159,83 +239,6 @@
       "project_page": null,
       "project": null,
       "selected": false
-    },
-    {
-      "id": "hdc-tune",
-      "title": "HDC_Tune: A Lightweight Tuning Framework for Hyperdimensional Computing on Limited Resource Edge Systems",
-      "authors": [
-        "B. Deng",
-        "P. Sen"
-      ],
-      "venue": "ICICN 2026",
-      "location": "Xi'an, China",
-      "publisher": "IEEE",
-      "year": 2026,
-      "type": "conference",
-      "status": "published",
-      "doi": "10.1109/ICICN71760.2026.11744804",
-      "url": "https://ieeexplore.ieee.org/document/11744804",
-      "pdf": null,
-      "arxiv": null,
-      "code": null,
-      "project_page": null,
-      "project": null,
-      "selected": true,
-      "pages": "44-49",
-      "_status_note": "Published in IEEE Xplore (document 11744804); DOI, pages and authors confirmed via Crossref."
-    },
-    {
-      "id": "mm-jepa-tc",
-      "title": "MM-JEPA-TC: Low Cost Multimodal Joint-Embedding Predictive Architecture for Tropical Cyclone Forecasting",
-      "authors": [
-        "K. F. A. Nasif",
-        "M. Frank",
-        "M. M. Islam",
-        "P. Dutta",
-        "M. R. Islam",
-        "P. Sen",
-        "R. Aygun",
-        "B. Deng"
-      ],
-      "venue": "IEEE SMC 2026",
-      "location": "Bellevue, WA, USA",
-      "publisher": null,
-      "year": 2026,
-      "type": "conference",
-      "status": "accepted",
-      "doi": null,
-      "url": null,
-      "pdf": null,
-      "arxiv": null,
-      "code": null,
-      "project_page": null,
-      "project": null,
-      "selected": false
-    },
-    {
-      "_status_note": "The professional CV lists this as 'accepted'; the academic CV gives an IEEE DOI and an IEEE Xplore link, so it is shown as published.",
-      "id": "error-correcting-coding",
-      "title": "A New Error Correcting Coding Technique to Tolerate Soft Errors",
-      "authors": [
-        "P. Sen",
-        "M. S. Sadi",
-        "N. Ashab",
-        "D. Rossi"
-      ],
-      "venue": "ICECIT 2021",
-      "location": null,
-      "publisher": "IEEE",
-      "year": 2021,
-      "type": "conference",
-      "status": "published",
-      "doi": "10.1109/ICECIT54077.2021.9641342",
-      "url": "https://ieeexplore.ieee.org/document/9641342",
-      "pdf": "https://drive.google.com/file/d/19P6vwCpG6xd9xdMyxZZH9EiIS5uRxQ-D/view?usp=sharing",
-      "arxiv": null,
-      "code": null,
-      "project_page": null,
-      "project": "memory-reliability",
-      "selected": true
     }
   ]
 }
